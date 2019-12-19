@@ -70,8 +70,8 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('header').append('<a class="continuebutton" href="#">Enter</a>');
 	$('header .continuebutton').click(function(){
 		$('header').addClass('slideLeft');
-		$('main').append('<h1 class="toplocation">California</h1>');
-	  $('main').css('visibility','visible');
+		$('.openingsection').append('<h1 style="margin-top:-100px" class="toplocation">California</h1>');
+	  $('.openingsection').css('visibility','visible');
 	});
 
 	// The following line calls a function to display
@@ -139,36 +139,44 @@ function displayData(forecast){
 	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[12].icon)+'">');
 
 	$('.day01 p').html(Math.round(forecast.currently.temperature) + "°F");
-	 $('.day01').append('<img src="'+displayIcon(forecast.daily.data[0].icon)+'">');
+	// $('.feelslike').html(Math.round(forecast.currently.apparentTemperature) + "°F" );
+	 $('.day01img').append('<img src="'+displayIcon(forecast.daily.data[0].icon)+'">');
 
 
-	 $('.day02 p').html(Math.round(forecast.daily.data[1].temperatureHigh) + "°F");
-	 $('.day02 h3').html(displayDay(1));
-	 $('.day02 h4').append('<img src="'+displayIcon(forecast.daily.data[1].icon)+'">');
+	 $('.day02p').html(Math.round(forecast.daily.data[1].temperatureHigh) + "°F");
+	 $('.day02h1').html(Math.round(forecast.daily.data[1].temperatureLow) + "°F");
+	 $('.day02h3').html(displayDay(1));
+	 $('.day02h4').append('<img src="'+displayIcon(forecast.daily.data[1].icon)+'">');
 	 
-	 $('.day03 p').html(Math.round(forecast.daily.data[2].temperatureHigh) + "°F");
-	 $('.day03 h3').html(displayDay(2));
-	 $('.day03 h4').append('<img src="'+displayIcon(forecast.daily.data[2].icon)+'">');
+	 $('.day03p').html(Math.round(forecast.daily.data[2].temperatureHigh) + "°F");
+	 $('.day03h1').html(Math.round(forecast.daily.data[2].temperatureLow) + "°F");
+	 $('.day03h3').html(displayDay(2));
+	 $('.day03h4').append('<img src="'+displayIcon(forecast.daily.data[2].icon)+'">');
 
-	 $('.day04 p').html(Math.round(forecast.daily.data[3].temperatureHigh) + "°F");
-	 $('.day04 h3').html(displayDay(3));
-	 $('.day04 h4').append('<img src="'+displayIcon(forecast.daily.data[3].icon)+'">');
+	 $('.day04p').html(Math.round(forecast.daily.data[3].temperatureHigh) + "°F");
+	 $('.day04h1').html(Math.round(forecast.daily.data[3].temperatureLow) + "°F");
+	 $('.day04h3').html(displayDay(3));
+	 $('.day04h4').append('<img src="'+displayIcon(forecast.daily.data[3].icon)+'">');
 
-	 $('.day05 p').html(Math.round(forecast.daily.data[4].temperatureHigh) + "°F");
-	 $('.day05 h3').html(displayDay(4));
-	 $('.day05 h4').append('<img src="'+displayIcon(forecast.daily.data[4].icon)+'">');
+	 $('.day05p').html(Math.round(forecast.daily.data[4].temperatureHigh) + "°F");
+	 $('.day05h1').html(Math.round(forecast.daily.data[4].temperatureLow) + "°F");
+	 $('.day05h3').html(displayDay(4));
+	 $('.day05h4').append('<img src="'+displayIcon(forecast.daily.data[4].icon)+'">');
 
-	 $('.day06 p').html(Math.round(forecast.daily.data[5].temperatureHigh) + "°F");
-	 $('.day06 h3').html(displayDay(5));
-	 $('.day06 h4').append('<img src="'+displayIcon(forecast.daily.data[5].icon)+'">');
+	 $('.day06p').html(Math.round(forecast.daily.data[5].temperatureHigh) + "°F");
+	 $('.day06h1').html(Math.round(forecast.daily.data[5].temperatureLow) + "°F");
+	 $('.day06h3').html(displayDay(5));
+	 $('.day06h4').append('<img src="'+displayIcon(forecast.daily.data[5].icon)+'">');
 
-	 $('.day07 p').html(Math.round(forecast.daily.data[6].temperatureHigh) + "°F");
-	 $('.day07 h3').html(displayDay(6));
-	 $('.day07 h4').append('<img src="'+displayIcon(forecast.daily.data[6].icon)+'">');
+	 $('.day07p').html(Math.round(forecast.daily.data[6].temperatureHigh) + "°F");
+	 $('.day07h1').html(Math.round(forecast.daily.data[6].temperatureLow) + "°F");
+	 $('.day07h3').html(displayDay(6));
+	 $('.day07h4').append('<img src="'+displayIcon(forecast.daily.data[6].icon)+'">');
 
-	 $('.day08 p').html(Math.round(forecast.daily.data[7].temperatureHigh) + "°F");
-	 $('.day08 h3').html(displayDay(7));
-	 $('.day08 h4').append('<img src="'+displayIcon(forecast.daily.data[7].icon)+'">');
+	 $('.day08p').html(Math.round(forecast.daily.data[7].temperatureHigh) + "°F");
+	 $('.day08h1').html(Math.round(forecast.daily.data[7].temperatureLow) + "°F");
+	 $('.day08h3').html(displayDay(7));
+	 $('.day08h4').append('<img src="'+displayIcon(forecast.daily.data[7].icon)+'">');
 	}
 }
 
@@ -204,8 +212,8 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('header').append('<a class="continuebutton" href="#">Enter</a>');
 	$('header .continuebutton').click(function(){
 		$('header').addClass('slideLeft');
-		$('main').append('<h1 class="toplocation">Florida</h1>');
-	  $('main').css('visibility','visible');
+		$('.openingsection').append('<h1 class="toplocation">Florida</h1>');
+	  $('.openingsection').css('visibility','visible');
 	});
 
 	// The following line calls a function to display
@@ -334,8 +342,8 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('header').append('<a class="continuebutton" href="#">Enter</a>');
 	$('header .continuebutton').click(function(){
 		$('header').addClass('slideLeft');
-		$('main').append('<h1 class="toplocation">Hong Kong</h1>');
-	  $('main').css('visibility','visible');
+		$('.openingsection').append('<h1 class="toplocation">Hong Kong</h1>');
+	  $('.openingsection').css('visibility','visible');
 	});
 
 	// The following line calls a function to display
@@ -464,8 +472,8 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('header').append('<a class="continuebutton" href="#">Enter</a>');
 	$('header .continuebutton').click(function(){
 		$('header').addClass('slideLeft');
-		$('main').append('<h1 class="toplocation">Paris</h1>');
-	  $('main').css('visibility','visible');
+		$('.openingsection').append('<h1 class="toplocation">Paris</h1>');
+	  $('.openingsection').css('visibility','visible');
 	});
 
 	// The following line calls a function to display
@@ -594,8 +602,8 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('header').append('<a class="continuebutton" href="#">Enter</a>');
 	$('header .continuebutton').click(function(){
 		$('header').addClass('slideLeft');
-		$('main').append('<h1 class="toplocation">Shanghai</h1>');
-	  $('main').css('visibility','visible');
+		$('.openingsection').append('<h1 class="toplocation">Shanghai</h1>');
+	  $('.openingsection').css('visibility','visible');
 	});
 
 	// The following line calls a function to display
@@ -728,8 +736,8 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('header').append('<a class="continuebutton" href="#">Enter</a>');
 	$('header .continuebutton').click(function(){
 		$('header').addClass('slideLeft');
-		$('main').append('<h1 class="toplocation">Tokyo</h1>');
-	  $('main').css('visibility','visible');
+		$('.openingsection').append('<h1 class="toplocation">Tokyo</h1>');
+	  $('.openingsection').css('visibility','visible');
 	});
 
 	// The following line calls a function to display
@@ -950,13 +958,13 @@ function displayDay(n){
 	var d = new Date();
 	var weekday = new Array();
 
-	weekday[0] = "Sun";
-	weekday[1] = "Mon";
-	weekday[2] = "Tue";
-	weekday[3] = "Wed";
-	weekday[4] = "Thu";
-	weekday[5] = "Fri";
-	weekday[6] = "Sat";
+	weekday[0] = "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
 
 	var dispDay = d.getDay() + n;
 
