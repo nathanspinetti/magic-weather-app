@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet"> 
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -31,10 +32,13 @@
       <h2 class="shan button" onclick="shan()">Shanghai</h2>
       <h2 class="toky button" onclick="toky()">Tokyo</h2>
     </div>
+
+    <img class="logowhite" src="../magicweatherapp/img/logowhite.png">
+
     
   </section>
 
-  <header>
+  <header class="hide">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 770.66 420.63" style="enable-background:new 0 0 770.66 420.63;" xml:space="preserve">
 <style type="text/css">
@@ -301,74 +305,80 @@
   </g>
 </g>
 </svg>
+<div class="backarrow"><a href=""><img src="../magicweatherapp/img/backarrow.png"></a></div>
     <div class="intro"></div>
+    <div class="wave-container">
+   <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 715.53"><defs><style>.cls-1{fill:#84da62;}</style></defs><title>wave (9)</title><path class="cls-1" d="M0,32.53l48-10.7c48-10.3,144-32.3,240-16,96,15.7,192,69.7,288,85.4,96,16.3,192-5.7,288-16,96-10.7,192-10.7,288-5.4,96,5.7,192,15.7,240,21.4l48,5.3v619H0Z"/></svg>
+  </div>
 
   </header>
 
   <main>
+    <div id="main" class="hide">
     <div class="openingsection">
-    <img src="../magicweatherapp/img/BGCastle.png" class="castle">
+      <div class="backarrow"><a href=""><img src="../magicweatherapp/img/backarrow.png"></a></div>
+    <div class="castle"></div>
 
     <section class="hourly" style="text-align: center;">
       <div class="hour1">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div></div>
+        <div style="width:50px;padding-left: 5px;"></div>
       </div>
       <div class="hour2">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;padding-bottom: 15px;">Icon</div>
       </div>
       <div class="hour3">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour4">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour5">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour6">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px; padding-left: 5px;">Icon</div>
       </div>
       <div class="hour7">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour8">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour9">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour10">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour11">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       <div class="hour12">
         <h2>time</h2>
         <h3>Temp</h3>
-        <div>Icon</div>
+        <div style="width:50px;padding-left: 5px;">Icon</div>
       </div>
       
       
@@ -377,9 +387,8 @@
 
     <div class="day01">
       <p style="text-align: center;"></p>
-      <!-- <h1 class="feelslike" style="text-align: center;"></h1> -->
       <h2 class="summary"></h2>
-      <div class="day01img"style="text-align: center;"></div>
+      <div class="day01img"style="justify-items: center;"></div>
     </div>
 
 </div>
@@ -390,52 +399,64 @@
       <h3 class="day02h3"></h3>
       <p class="day02p"></p>
       <h1 class="day02h1"></h1>
-      <h4 class="day02h4"></h4>
+      <h4 class="day02h4"style="width: 30px;"></h4>
 
       <h3 class="day03h3"></h3>
       <p class="day03p"></p>
       <h1 class="day03h1"></h1>
-      <h4 class="day03h4"></h4>
+      <h4 class="day03h4" style="width: 30px;"></h4>
 
       <h3 class="day04h3"></h3>
       <p class="day04p"></p>
       <h1 class="day04h1"></h1>
-      <h4 class="day04h4"></h4>
+      <h4 class="day04h4"style="width: 30px;"></h4>
 
       <h3 class="day05h3"></h3>
       <p class="day05p"></p>
       <h1 class="day05h1"></h1>
-      <h4 class="day05h4"></h4>
+      <h4 class="day05h4"style="width: 30px;"></h4>
 
       <h3 class="day06h3"></h3>
       <p class="day06p"></p>
       <h1 class="day06h1"></h1>
-      <h4 class="day06h4"></h4>
+      <h4 class="day06h4"style="width: 30px;"></h4>
 
       <h3 class="day07h3"></h3>
       <p class="day07p"></p>
       <h1 class="day07h1"></h1>
-      <h4 class="day07h4"></h4>
+      <h4 class="day07h4"style="width: 30px;"></h4>
 
       <h3 class="day08h3"></h3>
       <p class="day08p"></p>
       <h1 class="day08h1"></h1>
-      <h4 class="day08h4"></h4>
+      <h4 class="day08h4"style="width: 30px;"></h4>
 
    
 </div>
 
 <div class="currentdaydetail">
 
-  <div class="sunrise"></div>
-  <div class="sunset"></div>
-  <div class="snowchance"></div>
-  <div class="humidity"></div>
-  <div class="wind"></div>
-  <div class="precip"></div>
-
-
+  <div class="sunrise"><h1>Sunrise</h1><h2></h2></div>
+  <div class="sunset"><h1>Sunset</h1><h2></h2></div>
+  <div class="precipicon"><h1 style="text-transform:uppercase;">Type</h1><h2></h2></div>
+  <div class="humidity"><h1>Humidity</h1><h2></h2></div>
+  <div class="wind"><h1 style="text-transform:uppercase;">Wind</h1><h2></h2></div>
+  <div class="precip"><h1>Precipitation</h1><h2></h2></div>
+  <div class="infobutton">Learn More</div>
+</div>
+</div>
+<div id="infomain" class="hide">
+  <div class="infopage">
+    <div class="backarrow"><a href=""><img src="../magicweatherapp/img/backarrow.png"></a></div>
+    <img class="mickey" src="../magicweatherapp/img/mickeyminimal.png">
+    <div class="twitter" style="width:20%"><a href="https://twitter.com/"><img src="img/icons/twitter-brands.svg"></a></div>
+    <div class="instagram"style="width:20%"><a href="https://www.instagram.com/"><img src="img/icons/instagram-brands.svg"></a></div>
+    <div class="email"><a href="mailto:nspinetti01@wildcats.jwu.edu"><h1>Contact Us</h1></a></div>
+    <div class="website"><a href="https://nathanspinetti.com/"><h1>Portfolio</h1></a></div>
+    <div class="aboutapp"><p>This app utilizes different API's to provide the most accurate weather and wait time information possible. This is not made by Disney.</p></div>
+    <div class="apiused"><a href="https://darksky.net/dev"><h1>DarkSkyAPI</h1></a></div>
   </div>
+</div>
 
   <section class="parks">
     
