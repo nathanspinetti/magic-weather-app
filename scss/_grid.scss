@@ -6,21 +6,42 @@
 	align-items:center;
 }
 	.visiting{
-		grid-column:5 / span 4;
+		grid-column:2/12;
 		grid-row:1 / span 3;
 		text-align:center;
 		justify-items:center;
 		align-items:center;
 		color:#ffffff;
+		width:100vw;
 	}
 	.buttons{
 		grid-column:1/-1;
-		grid-row:4/10;
 		font-family:'Karimun';
 		font-size:2rem;
-		align-items:center;
+
 	}
-	.button{
+	.cali{
+		grid-column:1/2;
+		width:100%;
+	}
+	.flor{
+		grid-column:3/4;
+		width:100%;
+	}
+	.hong{
+		grid-column:5/6;
+		width:100%;
+	}
+	.pari{
+		grid-column:7/8;
+		width:100%;
+	}
+	.shan{
+		grid-column:9/10;
+		width:100%;
+	}
+	.toky{
+		grid-column:11/12;
 		width:100%;
 	}
 
@@ -69,6 +90,7 @@ body{
 	height:100vh;
 	width:100vw;
 	margin:0;
+	overflow-x:hidden;
 
 	.hourly{
 	grid-column: 1/-1;

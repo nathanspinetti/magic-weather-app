@@ -80,6 +80,8 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	  $('#main').addClass('hide');
 	});
 
+
+
 	// The following line calls a function to display
 	// the main weather information. DO NOT EDIT THIS LINE.
 	displayData(forecast);
@@ -99,72 +101,72 @@ function displayData(forecast){
 	$('.hour1 h2').html(timeConverter(forecast.hourly.data[1].time)+'0');
 	$('.hour1 h3').html(Math.round(forecast.hourly.data[1].temperature) + "°F");
 	$('.hour1 div').html('<img src="'+displayIcon(forecast.hourly.data[1].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[1].icon)+'">');
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[1].icon)+'">');
 
 	$('.hour2 h2').html(timeConverter(forecast.hourly.data[2].time)+'0');
 	$('.hour2 h3').html(Math.round(forecast.hourly.data[2].temperature) + "°F");
 	$('.hour2 div').html('<img src="'+displayIcon(forecast.hourly.data[2].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[2].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[2].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour3 h2').html(timeConverter(forecast.hourly.data[3].time)+'0');
 	$('.hour3 h3').html(Math.round(forecast.hourly.data[3].temperature) + "°F");
 	$('.hour3 div').html('<img src="'+displayIcon(forecast.hourly.data[3].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[3].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[3].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour4 h2').html(timeConverter(forecast.hourly.data[4].time)+'0');
 	$('.hour4 h3').html(Math.round(forecast.hourly.data[4].temperature) + "°F");
 	$('.hour4 div').html('<img src="'+displayIcon(forecast.hourly.data[4].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[4].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[4].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour5 h2').html(timeConverter(forecast.hourly.data[5].time)+'0');
 	$('.hour5 h3').html(Math.round(forecast.hourly.data[5].temperature) + "°F");
 	$('.hour5 div').html('<img src="'+displayIcon(forecast.hourly.data[5].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[5].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[5].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour6 h2').html(timeConverter(forecast.hourly.data[6].time)+'0');
 	$('.hour6 h3').html(Math.round(forecast.hourly.data[6].temperature) + "°F");
 	$('.hour6 div').html('<img src="'+displayIcon(forecast.hourly.data[6].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[6].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[6].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour7 h2').html(timeConverter(forecast.hourly.data[7].time)+'0');
 	$('.hour7 h3').html(Math.round(forecast.hourly.data[7].temperature) + "°F");
 	$('.hour7 div').html('<img src="'+displayIcon(forecast.hourly.data[7].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[7].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[7].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour8 h2').html(timeConverter(forecast.hourly.data[8].time)+'0');
 	$('.hour8 h3').html(Math.round(forecast.hourly.data[8].temperature) + "°F");
 	$('.hour8 div').html('<img src="'+displayIcon(forecast.hourly.data[8].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[8].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[8].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour9 h2').html(timeConverter(forecast.hourly.data[9].time)+'0');
 	$('.hour9 h3').html(Math.round(forecast.hourly.data[9].temperature) + "°F");
 	$('.hour9 div').html('<img src="'+displayIcon(forecast.hourly.data[9].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[9].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[9].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour10 h2').html(timeConverter(forecast.hourly.data[10].time)+'0');
 	$('.hour10 h3').html(Math.round(forecast.hourly.data[10].temperature) + "°F");
 	$('.hour10 div').html('<img src="'+displayIcon(forecast.hourly.data[10].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[10].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[10].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour11 h2').html(timeConverter(forecast.hourly.data[11].time)+'0');
 	$('.hour11 h3').html(Math.round(forecast.hourly.data[11].temperature) + "°F");
 	$('.hour11 div').html('<img src="'+displayIcon(forecast.hourly.data[11].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[11].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[11].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour12 h2').html(timeConverter(forecast.hourly.data[12].time)+'0');
 	$('.hour12 h3').html(Math.round(forecast.hourly.data[12].temperature) + "°F");
 	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[12].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[12].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[12].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.day01 p').html(Math.round(forecast.currently.temperature) + "°F");
@@ -463,72 +465,72 @@ function displayData(forecast){
 	$('.hour1 h2').html(timeConverter(forecast.hourly.data[1].time)+'0');
 	$('.hour1 h3').html(Math.round(forecast.hourly.data[1].temperature) + "°F");
 	$('.hour1 div').html('<img src="'+displayIcon(forecast.hourly.data[1].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[1].icon)+'">');
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[1].icon)+'">');
 
 	$('.hour2 h2').html(timeConverter(forecast.hourly.data[2].time)+'0');
 	$('.hour2 h3').html(Math.round(forecast.hourly.data[2].temperature) + "°F");
 	$('.hour2 div').html('<img src="'+displayIcon(forecast.hourly.data[2].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[2].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[2].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour3 h2').html(timeConverter(forecast.hourly.data[3].time)+'0');
 	$('.hour3 h3').html(Math.round(forecast.hourly.data[3].temperature) + "°F");
 	$('.hour3 div').html('<img src="'+displayIcon(forecast.hourly.data[3].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[3].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[3].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour4 h2').html(timeConverter(forecast.hourly.data[4].time)+'0');
 	$('.hour4 h3').html(Math.round(forecast.hourly.data[4].temperature) + "°F");
 	$('.hour4 div').html('<img src="'+displayIcon(forecast.hourly.data[4].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[4].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[4].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour5 h2').html(timeConverter(forecast.hourly.data[5].time)+'0');
 	$('.hour5 h3').html(Math.round(forecast.hourly.data[5].temperature) + "°F");
 	$('.hour5 div').html('<img src="'+displayIcon(forecast.hourly.data[5].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[5].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[5].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour6 h2').html(timeConverter(forecast.hourly.data[6].time)+'0');
 	$('.hour6 h3').html(Math.round(forecast.hourly.data[6].temperature) + "°F");
 	$('.hour6 div').html('<img src="'+displayIcon(forecast.hourly.data[6].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[6].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[6].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour7 h2').html(timeConverter(forecast.hourly.data[7].time)+'0');
 	$('.hour7 h3').html(Math.round(forecast.hourly.data[7].temperature) + "°F");
 	$('.hour7 div').html('<img src="'+displayIcon(forecast.hourly.data[7].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[7].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[7].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour8 h2').html(timeConverter(forecast.hourly.data[8].time)+'0');
 	$('.hour8 h3').html(Math.round(forecast.hourly.data[8].temperature) + "°F");
 	$('.hour8 div').html('<img src="'+displayIcon(forecast.hourly.data[8].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[8].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[8].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour9 h2').html(timeConverter(forecast.hourly.data[9].time)+'0');
 	$('.hour9 h3').html(Math.round(forecast.hourly.data[9].temperature) + "°F");
 	$('.hour9 div').html('<img src="'+displayIcon(forecast.hourly.data[9].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[9].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[9].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour10 h2').html(timeConverter(forecast.hourly.data[10].time)+'0');
 	$('.hour10 h3').html(Math.round(forecast.hourly.data[10].temperature) + "°F");
 	$('.hour10 div').html('<img src="'+displayIcon(forecast.hourly.data[10].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[10].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[10].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour11 h2').html(timeConverter(forecast.hourly.data[11].time)+'0');
 	$('.hour11 h3').html(Math.round(forecast.hourly.data[11].temperature) + "°F");
 	$('.hour11 div').html('<img src="'+displayIcon(forecast.hourly.data[11].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[11].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[11].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour12 h2').html(timeConverter(forecast.hourly.data[12].time)+'0');
 	$('.hour12 h3').html(Math.round(forecast.hourly.data[12].temperature) + "°F");
 	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[12].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[12].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[12].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.day01 p').html(Math.round(forecast.currently.temperature) + "°F");
@@ -645,72 +647,72 @@ function displayData(forecast){
 	$('.hour1 h2').html(timeConverter(forecast.hourly.data[1].time)+'0');
 	$('.hour1 h3').html(Math.round(forecast.hourly.data[1].temperature) + "°F");
 	$('.hour1 div').html('<img src="'+displayIcon(forecast.hourly.data[1].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[1].icon)+'">');
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[1].icon)+'">');
 
 	$('.hour2 h2').html(timeConverter(forecast.hourly.data[2].time)+'0');
 	$('.hour2 h3').html(Math.round(forecast.hourly.data[2].temperature) + "°F");
 	$('.hour2 div').html('<img src="'+displayIcon(forecast.hourly.data[2].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[2].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[2].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour3 h2').html(timeConverter(forecast.hourly.data[3].time)+'0');
 	$('.hour3 h3').html(Math.round(forecast.hourly.data[3].temperature) + "°F");
 	$('.hour3 div').html('<img src="'+displayIcon(forecast.hourly.data[3].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[3].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[3].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour4 h2').html(timeConverter(forecast.hourly.data[4].time)+'0');
 	$('.hour4 h3').html(Math.round(forecast.hourly.data[4].temperature) + "°F");
 	$('.hour4 div').html('<img src="'+displayIcon(forecast.hourly.data[4].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[4].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[4].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour5 h2').html(timeConverter(forecast.hourly.data[5].time)+'0');
 	$('.hour5 h3').html(Math.round(forecast.hourly.data[5].temperature) + "°F");
 	$('.hour5 div').html('<img src="'+displayIcon(forecast.hourly.data[5].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[5].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[5].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour6 h2').html(timeConverter(forecast.hourly.data[6].time)+'0');
 	$('.hour6 h3').html(Math.round(forecast.hourly.data[6].temperature) + "°F");
 	$('.hour6 div').html('<img src="'+displayIcon(forecast.hourly.data[6].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[6].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[6].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour7 h2').html(timeConverter(forecast.hourly.data[7].time)+'0');
 	$('.hour7 h3').html(Math.round(forecast.hourly.data[7].temperature) + "°F");
 	$('.hour7 div').html('<img src="'+displayIcon(forecast.hourly.data[7].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[7].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[7].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour8 h2').html(timeConverter(forecast.hourly.data[8].time)+'0');
 	$('.hour8 h3').html(Math.round(forecast.hourly.data[8].temperature) + "°F");
 	$('.hour8 div').html('<img src="'+displayIcon(forecast.hourly.data[8].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[8].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[8].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour9 h2').html(timeConverter(forecast.hourly.data[9].time)+'0');
 	$('.hour9 h3').html(Math.round(forecast.hourly.data[9].temperature) + "°F");
 	$('.hour9 div').html('<img src="'+displayIcon(forecast.hourly.data[9].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[9].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[9].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour10 h2').html(timeConverter(forecast.hourly.data[10].time)+'0');
 	$('.hour10 h3').html(Math.round(forecast.hourly.data[10].temperature) + "°F");
 	$('.hour10 div').html('<img src="'+displayIcon(forecast.hourly.data[10].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[10].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[10].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour11 h2').html(timeConverter(forecast.hourly.data[11].time)+'0');
 	$('.hour11 h3').html(Math.round(forecast.hourly.data[11].temperature) + "°F");
 	$('.hour11 div').html('<img src="'+displayIcon(forecast.hourly.data[11].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[11].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[11].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour12 h2').html(timeConverter(forecast.hourly.data[12].time)+'0');
 	$('.hour12 h3').html(Math.round(forecast.hourly.data[12].temperature) + "°F");
 	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[12].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[12].icon)+'">')
+	$('.castle').html('<img src="'+displayCastlesl(forecast.hourly.data[12].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.day01 p').html(Math.round(forecast.currently.temperature) + "°F");
@@ -827,72 +829,72 @@ function displayData(forecast){
 	$('.hour1 h2').html(timeConverter(forecast.hourly.data[1].time)+'0');
 	$('.hour1 h3').html(Math.round(forecast.hourly.data[1].temperature) + "°F");
 	$('.hour1 div').html('<img src="'+displayIcon(forecast.hourly.data[1].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[1].icon)+'">');
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[1].icon)+'">');
 
 	$('.hour2 h2').html(timeConverter(forecast.hourly.data[2].time)+'0');
 	$('.hour2 h3').html(Math.round(forecast.hourly.data[2].temperature) + "°F");
 	$('.hour2 div').html('<img src="'+displayIcon(forecast.hourly.data[2].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[2].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[2].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour3 h2').html(timeConverter(forecast.hourly.data[3].time)+'0');
 	$('.hour3 h3').html(Math.round(forecast.hourly.data[3].temperature) + "°F");
 	$('.hour3 div').html('<img src="'+displayIcon(forecast.hourly.data[3].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[3].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[3].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour4 h2').html(timeConverter(forecast.hourly.data[4].time)+'0');
 	$('.hour4 h3').html(Math.round(forecast.hourly.data[4].temperature) + "°F");
 	$('.hour4 div').html('<img src="'+displayIcon(forecast.hourly.data[4].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[4].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[4].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour5 h2').html(timeConverter(forecast.hourly.data[5].time)+'0');
 	$('.hour5 h3').html(Math.round(forecast.hourly.data[5].temperature) + "°F");
 	$('.hour5 div').html('<img src="'+displayIcon(forecast.hourly.data[5].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[5].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[5].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour6 h2').html(timeConverter(forecast.hourly.data[6].time)+'0');
 	$('.hour6 h3').html(Math.round(forecast.hourly.data[6].temperature) + "°F");
 	$('.hour6 div').html('<img src="'+displayIcon(forecast.hourly.data[6].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[6].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[6].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour7 h2').html(timeConverter(forecast.hourly.data[7].time)+'0');
 	$('.hour7 h3').html(Math.round(forecast.hourly.data[7].temperature) + "°F");
 	$('.hour7 div').html('<img src="'+displayIcon(forecast.hourly.data[7].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[7].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[7].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour8 h2').html(timeConverter(forecast.hourly.data[8].time)+'0');
 	$('.hour8 h3').html(Math.round(forecast.hourly.data[8].temperature) + "°F");
 	$('.hour8 div').html('<img src="'+displayIcon(forecast.hourly.data[8].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[8].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[8].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour9 h2').html(timeConverter(forecast.hourly.data[9].time)+'0');
 	$('.hour9 h3').html(Math.round(forecast.hourly.data[9].temperature) + "°F");
 	$('.hour9 div').html('<img src="'+displayIcon(forecast.hourly.data[9].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[9].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[9].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour10 h2').html(timeConverter(forecast.hourly.data[10].time)+'0');
 	$('.hour10 h3').html(Math.round(forecast.hourly.data[10].temperature) + "°F");
 	$('.hour10 div').html('<img src="'+displayIcon(forecast.hourly.data[10].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[10].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[10].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour11 h2').html(timeConverter(forecast.hourly.data[11].time)+'0');
 	$('.hour11 h3').html(Math.round(forecast.hourly.data[11].temperature) + "°F");
 	$('.hour11 div').html('<img src="'+displayIcon(forecast.hourly.data[11].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[11].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[11].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.hour12 h2').html(timeConverter(forecast.hourly.data[12].time)+'0');
 	$('.hour12 h3').html(Math.round(forecast.hourly.data[12].temperature) + "°F");
 	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[12].icon)+'">');
-	$('.castle').html('<img src="'+displayCastle(forecast.hourly.data[12].icon)+'">')
+	$('.castle').html('<img src="'+displayCastleen(forecast.hourly.data[12].icon)+'">')
 		$('.castle').css('width, 100vw');
 
 	$('.day01 p').html(Math.round(forecast.currently.temperature) + "°F");
@@ -1283,30 +1285,60 @@ function displayDay(n){
    Function for converting timestampt to readable text
    Source: https://stackoverflow.com/a/6078873
    ----------------------------------------------- */
+	$('.toloc2').click(function(){
+		$('.locationselection').addClass('slideRight');
+	  $('.header').addClass('hide');
+	  $('#main').addClass('hide');
+	});
+	$('.tomain').click(function(){
+		$('#main').removeClass('hide');
+		$('#infomain').addClass('hide');
+		$('#main').addClass('slideRight');
+	});
+	function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+
 
      $(".cali").hover(function(){
-  		$(".logowhite").attr("src", "img/calidisney.png");
+  		$(".logowhite").attr("src", "img/calidisneyblack.png");
+  		$(".locbg").attr("src", "img/Sleeping/BGClearSky.png");
   		})
 
      $(".flor").hover(function(){
-  		$(".logowhite").attr("src", "img/flordisney.png");
+  		$(".logowhite").attr("src", "img/flordisneyblack.png");
+  		$(".locbg").attr("src", "img/Castles/BGClearSky.png");
   		})
 
      $(".hong").hover(function(){
-  		$(".logowhite").attr("src", "img/hongdisney.png");
+  		$(".logowhite").attr("src", "img/hongdisneyblack.png");
+  		$(".locbg").attr("src", "img/Sleeping/BGClearSky.png");
   		})
 
      $(".pari").hover(function(){
-  		$(".logowhite").attr("src", "img/paridisney.png");
+  		$(".logowhite").attr("src", "img/paridisneyblack.png");
+  		$(".locbg").attr("src", "img/Sleeping/BGClearSky.png");
   		})
 
      $(".shan").hover(function(){
-  		$(".logowhite").attr("src", "img/shandisney.png");
+  		$(".logowhite").attr("src", "img/shandisneyblack.png");
+  		$(".locbg").attr("src", "img/Enchanted/BGClearSky.png");
   		})
 
      $(".toky").hover(function(){
-  		$(".logowhite").attr("src", "img/tokydisney.png");
+  		$(".logowhite").attr("src", "img/tokydisneyblack.png");
+  		$(".locbg").attr("src", "img/Castles/BGClearSky.png");
   		})
+
+     $(".cali, .flor, .hong, .pari, .shan, .toky").click(function(){
+     	$(".locbg").css("margin-left","-1000px");
+     	$(".visiting").css("padding","0px")
+     })
+
+     $(".toloc2").click(function(){
+     	$(".locbg").css("margin-left","0px");
+     })
 
 function timeConverter(UNIX_timestamp){
   var a = new Date(UNIX_timestamp * 1000);
@@ -1518,6 +1550,98 @@ function displayCastle(n){
     		break;
     	case "tornado":
     		return "img/Castles/BGTornado.png";
+    		break;
+  		default:
+    		// code block
+	}
+}
+
+function displayCastleen(n){
+	switch(n) {
+		case "clear-day":
+    		return "img/Enchanted/BGClearSky.png";
+    		break;
+    	case "clear-night":
+    		return "img/Enchanted/BGClearNight.png";
+    		break;
+    	case "rain":
+    		return "img/Enchanted/BGRain.png";
+    		break;
+    	case "snow":
+    		return "img/Enchanted/BGSnow.png";
+    		break;
+    	case "sleet":
+    		return "img/Enchanted/BGSleet.png";
+    		break;
+    	case "wind":
+    		return "img/Enchanted/BGWind.png";
+    		break;
+    	case "fog":
+    		return "img/Enchanted/BGFog.png";
+    		break;
+    	case "cloudy":
+    		return "img/Enchanted/BGCloudy.png";
+    		break;
+    	case "partly-cloudy-day":
+    		return "img/Enchanted/BGPartlyCloudy.png";
+    		break;
+    	case "partly-cloudy-night":
+    		return "img/Enchanted/BGPartlyCloudyNight.png";
+    		break;
+    	case "hail":
+    		return "img/Enchanted/BGSleet.png";
+    		break;
+    	case "thunderstorm":
+    		return "img/Enchanted/BGThunderstorm.png";
+    		break;
+    	case "tornado":
+    		return "img/Enchanted/BGTornado.png";
+    		break;
+  		default:
+    		// code block
+	}
+}
+
+function displayCastlesl(n){
+	switch(n) {
+		case "clear-day":
+    		return "img/Sleeping/BGClearSky.png";
+    		break;
+    	case "clear-night":
+    		return "img/Sleeping/BGClearNight.png";
+    		break;
+    	case "rain":
+    		return "img/Sleeping/BGRain.png";
+    		break;
+    	case "snow":
+    		return "img/Sleeping/BGSnow.png";
+    		break;
+    	case "sleet":
+    		return "img/Sleeping/BGSleet.png";
+    		break;
+    	case "wind":
+    		return "img/Sleeping/BGWind.png";
+    		break;
+    	case "fog":
+    		return "img/Sleeping/BGFog.png";
+    		break;
+    	case "cloudy":
+    		return "img/Sleeping/BGCloudy.png";
+    		break;
+    	case "partly-cloudy-day":
+    		return "img/Sleeping/BGPartlyCloudy.png";
+    		break;
+    	case "partly-cloudy-night":
+    		return "img/Sleeping/BGPartlyCloudyNight.png";
+    		break;
+    	case "hail":
+    		return "img/Sleeping/BGSleet.png";
+    		break;
+    	case "thunderstorm":
+    		return "img/Sleeping/BGThunderstorm.png";
+    		break;
+    	case "tornado":
+    		return "img/Sleeping/BGTornado.png";
     		break;
   		default:
     		// code block

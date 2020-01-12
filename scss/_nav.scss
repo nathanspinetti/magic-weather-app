@@ -9,7 +9,6 @@
 }
 
 .locationselection{
-	text-align:center;
 	justify-items:center;
 	font-family:'Karimun';
 	font-size:1.7rem;
@@ -17,7 +16,14 @@
 	position:fixed;
 	top: 0;
   	left: 0;
-  	background-color:#cb6679;
+}
+
+.locbg{
+	position:absolute;
+	opacity:.6;
+	z-index:-1;
+	grid-column:1/-1;
+	height:100vh;
 }
 
 .continuebutton{
@@ -41,4 +47,5 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	cursor:pointer;
 }

@@ -21,19 +21,21 @@
 <body>
 
   <section class="locationselection">
+    <img class="locbg" src="../magicweatherapp/img/Castles/BGClearSky.png">
 
     <h1 class="visiting">Which Disney Park Will You Be Visiting</h1>
+    <div class="boxx"><h1></h1></div>
 
     <div class="buttons">
-      <h2 class="cali button" onclick="cali()">California</h2>
-      <h2 class="flor button" onclick="flor()">Florida</h2>
-      <h2 class="hong button" onclick="hong()">Hong Kong</h2>
-      <h2 class="pari button" onclick="pari()">Paris</h2>
-      <h2 class="shan button" onclick="shan()">Shanghai</h2>
-      <h2 class="toky button" onclick="toky()">Tokyo</h2>
+      <h2 class="cali" onclick="cali()">California</h2>
+      <h2 class="flor" onclick="flor()">Florida</h2>
+      <h2 class="hong" onclick="hong()">Hong Kong</h2>
+      <h2 class="pari" onclick="pari()">Paris</h2>
+      <h2 class="shan" onclick="shan()">Shanghai</h2>
+      <h2 class="toky" onclick="toky()">Tokyo</h2>
     </div>
 
-    <img class="logowhite" src="../magicweatherapp/img/logowhite.png">
+    <img class="logowhite" src="../magicweatherapp/img/magiclogo.png">
 
     
   </section>
@@ -305,7 +307,7 @@
   </g>
 </g>
 </svg>
-<div class="backarrow"><a href=""><img src="../magicweatherapp/img/backarrow.png"></a></div>
+<div class="backarrow toloc"><a href=""><img src="../magicweatherapp/img/backarrow.png"></a></div>
     <div class="intro"></div>
     <div class="wave-container">
    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 715.53"><defs><style>.cls-1{fill:#84da62;}</style></defs><title>wave (9)</title><path class="cls-1" d="M0,32.53l48-10.7c48-10.3,144-32.3,240-16,96,15.7,192,69.7,288,85.4,96,16.3,192-5.7,288-16,96-10.7,192-10.7,288-5.4,96,5.7,192,15.7,240,21.4l48,5.3v619H0Z"/></svg>
@@ -316,7 +318,7 @@
   <main>
     <div id="main" class="hide">
     <div class="openingsection">
-      <div class="backarrow"><a href=""><img src="../magicweatherapp/img/backarrow.png"></a></div>
+      <div class="backarrow toloc2"><a href="javascript:timedRefresh(1200)"><img src="../magicweatherapp/img/backarrow.png"></a></div>
     <div class="castle"></div>
 
     <section class="hourly" style="text-align: center;">
@@ -447,13 +449,13 @@
 </div>
 <div id="infomain" class="hide">
   <div class="infopage">
-    <div class="backarrow"><a href=""><img src="../magicweatherapp/img/backarrow.png"></a></div>
+    <div class="backarrow tomain"><img src="../magicweatherapp/img/backarrow.png"></div>
     <img class="mickey" src="../magicweatherapp/img/mickeyminimal.png">
     <div class="twitter" style="width:20%"><a href="https://twitter.com/"><img src="img/icons/twitter-brands.svg"></a></div>
     <div class="instagram"style="width:20%"><a href="https://www.instagram.com/"><img src="img/icons/instagram-brands.svg"></a></div>
     <div class="email"><a href="mailto:nspinetti01@wildcats.jwu.edu"><h1>Contact Us</h1></a></div>
     <div class="website"><a href="https://nathanspinetti.com/"><h1>Portfolio</h1></a></div>
-    <div class="aboutapp"><p>This app utilizes different API's to provide the most accurate weather and wait time information possible. This is not made by Disney.</p></div>
+    <div class="aboutapp"><p>This app utilizes DarkSky API to provide the most accurate weather information possible. Not a product from Disney.</p></div>
     <div class="apiused"><a href="https://darksky.net/dev"><h1>DarkSkyAPI</h1></a></div>
   </div>
 </div>
