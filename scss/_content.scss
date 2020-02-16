@@ -9,11 +9,16 @@
 }
 
 .castle{
+	img{
+		object-fit:cover;
+		width:110vw;
+		height:130vh;
+	}
 	grid-column:1/12;
 	grid-row:1/ span 9;
 	z-index:-1;
 	object-fit:cover;
-	height:110vh;
+	height:120vh;
 	opacity:.4;
 	overflow:hidden;
 }
